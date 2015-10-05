@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <Script src="node_modules/angular/angular.js"></Script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="node_modules/angular-mocks/angular-mocks.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+
+    <Script src="HelloWorld.js"></Script>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+
+    <!-- Application Script-->
+
+    <script src="app.js"></script>
+    <script src="productListCtrl.js"></script>
+</head>
+<body ng-app="productManagement">
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand">Acme Product Management</div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div ng-include="'productListView.html'"></div>
+</div>
+
+
+</body>
+</html>
