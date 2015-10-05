@@ -10,13 +10,13 @@ module OneAmerica.OnePlatform.Api.MSafe {
 
         CreateAccount (account: any) : any;
         GetAccount (id: number) : any;
-        SearchUsers (searchString: string): any[];
         GetAccounts() : any[];
-        GetAccount (planCode: string): any;
+        GetAccountByPlanCode (planCode: string): any;
+        SearchUsers (searchString: string): any[];
         GetUser (id: number): any;
-        GetUser (email: string) : any;
+        GetUserByEmail (email: string) : any;
         UnlockUser (id: number): any;
-        UnlockUser (email: string): any;
+        UnlockUserByEmail (email: string): any;
         IsLocked (id: number): boolean;
         GetAccountFiles (id: number): any[];
         GetAccountFolders (id: number): any[];
