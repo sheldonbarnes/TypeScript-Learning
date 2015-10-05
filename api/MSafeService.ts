@@ -18,7 +18,7 @@ module OneAmerica.OnePlatform.Api.MSafe {
         IsLocked (id: number) : boolean {
 
             var isLocked: boolean;
-            this.$http.get("http://localhost/CreateAccount" + id).then (function onIsAccountLocked(response) {
+            this.$http.get("http://localhost/IsAccountLocked" + id).then (function onIsAccountLocked(response) {
                 this.isLocked =  response.data;
             });
 
